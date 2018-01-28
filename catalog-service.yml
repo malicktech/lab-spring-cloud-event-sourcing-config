@@ -14,7 +14,7 @@ spring:
     host: localhost
     port: 6379
   datasource:
-    url: jdbc:mysql://localhost:3306/dev?useSSL=false
+    url: jdbc:mysql://localhost:3306/dev?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: dbpass
     initialize: false
@@ -33,7 +33,7 @@ spring:
     host: redis
     port: 6379
   datasource:
-    url: jdbc:mysql://mysql:3306/dev?useSSL=false
+    url: jdbc:mysql://localhost:3306/dev?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: dbpass
     initialize: true
