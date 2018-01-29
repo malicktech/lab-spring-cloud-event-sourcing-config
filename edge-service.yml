@@ -26,7 +26,7 @@ ribbon:
   ReadTimeout: 60000
 ---
 spring:
-  profiles: development
+  profiles: dev
   application:
     name: edge-service
 zuul:

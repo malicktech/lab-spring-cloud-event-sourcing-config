@@ -30,7 +30,7 @@ security:
   ignored: /assets/**
 ---
 spring:
-  profiles: development
+  profiles: dev
   application:
     name: online-store-web
 zuul:

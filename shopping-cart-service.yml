@@ -15,7 +15,7 @@ security:
   enable-csrf: false
 ---
 spring:
-  profiles: development
+  profiles: dev
   jpa:
     show_sql: false
     database: MYSQL
@@ -27,10 +27,10 @@ spring:
 security:
   oauth2:
     resource:
-      userInfoUri: http://192.168.99.100:8181/uaa/user
+      userInfoUri: http://localhost:8181/uaa/user
     client:
       client-id: acme
-      access-token-uri: http://192.168.99.100:8787
+      access-token-uri: http://localhost:8787
   enable-csrf: false
 eureka:
   instance:
@@ -54,7 +54,7 @@ spring:
 security:
   oauth2:
     resource:
-      userInfoUri: http://${DOCKER_IP:192.168.99.100}:8181/uaa/user
+      userInfoUri: http://${DOCKER_IP:localhost}:8181/uaa/user
     client:
       client-id: acme
   enable-csrf: false

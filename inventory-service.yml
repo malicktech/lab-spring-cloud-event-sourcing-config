@@ -7,7 +7,7 @@ spring:
     port: ${SPRING_NEO4J_PORT:7474}
 ---
 spring:
-  profiles: development
+  profiles: dev
   neo4j:
     host: ${SPRING_NEO4J_HOST:localhost}
     port: ${SPRING_NEO4J_PORT:7474}

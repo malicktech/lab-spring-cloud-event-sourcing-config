@@ -14,10 +14,10 @@ spring:
     host: localhost
     port: 6379
   datasource:
-    url: jdbc:mysql://localhost:3306/dev?useUnicode=true&characterEncoding=utf8&useSSL=false
-    username: root
-    password: dbpass
-    initialize: false
+    #url: jdbc:mysql://localhost:3306/dev?useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:h2:mem:dev;DB_CLOSE_DELAY=-1
+    username: catalogdev
+    password:
 eureka:
   instance:
     prefer-ip-address: true
