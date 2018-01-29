@@ -21,9 +21,9 @@ spring:
     database: MYSQL
     generate-ddl: true
   datasource:
-    url: jdbc:mysql://localhost:3306/dev?useUnicode=true&characterEncoding=utf8&useSSL=false
-    username: root
-    password: dbpass
+    url: jdbc:h2:mem:dev;DB_CLOSE_DELAY=-1
+    username: localdev
+    password:
 security:
   oauth2:
     resource:
