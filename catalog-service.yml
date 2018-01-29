@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: development
+    active: dev
 ---
 spring:
   profiles: cloud
@@ -9,7 +9,7 @@ spring:
     port: ${vcap.services.catalog-redis.credentials.port:6379}
 ---
 spring:
-  profiles: development
+  profiles: dev
   redis:
     host: localhost
     port: 6379
